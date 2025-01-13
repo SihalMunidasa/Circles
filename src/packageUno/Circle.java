@@ -57,4 +57,12 @@ public class Circle {
     public void setColor(String color) {
         this.color = color;
     }
+
+    // to reduce lengthy lines of code to print the details of the circle
+    // a toString can be used to print a description of a circle
+    // the toString method overrides the toString method in a class called "Object" in the Java Standard Library
+    @Override
+    public String toString() {
+        return "The circle has a radius of " + this.radius + " and an area of " + this.getArea() + " where its color is " + this.color;
+    }
 }
